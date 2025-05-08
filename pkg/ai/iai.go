@@ -20,6 +20,7 @@ import (
 
 var (
 	clients = []IAI{
+		&CustomRagAIClient{},
 		&OpenAIClient{},
 		&AzureAIClient{},
 		&LocalAIClient{},
@@ -36,6 +37,7 @@ var (
 		&IBMWatsonxAIClient{},
 	}
 	Backends = []string{
+		customRAGAIClientName,
 		openAIClientName,
 		localAIClientName,
 		ollamaClientName,
